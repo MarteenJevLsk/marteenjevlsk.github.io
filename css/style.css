@@ -1,5 +1,28 @@
-body {
-    color: white;
-    background-color: black;
+.texto-gradient {
+    margin: 15px;
+    padding: 13px;;
     font-family: monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20%;
+    background: linear-gradient(-45deg, rgb(153, 0, 255), green, blue, rgb(76, 0, 255));
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: mudarCores 10s ease infinite;
+}
+
+@keyframes mudarCores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
